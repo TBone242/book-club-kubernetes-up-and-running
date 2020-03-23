@@ -7,6 +7,10 @@ Welcome to the book club project for **Kubernetes - Up and Running, 2nd
 Edition**. We are using this project to store code and configs that we
 use to poke and prod at our shiny new Kubernetes clusters.
 
+## Schedule
+
+[Here it is](schedule.md)!
+
 ## Slack Channel
 
 Please contact [Tom Purl](https://github.com/tompurl) for an invitation.
