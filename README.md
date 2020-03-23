@@ -9,8 +9,7 @@ use to poke and prod at our shiny new Kubernetes clusters.
 
 ## Slack Channel
 
+Please contact [Tom Purl](https://github.com/tompurl) for an invitation.
+
 - https://the-it-crowd-naper.slack.com/archives/C01085AEH7V
 
-## Questions?
-
-Please contact [Tom Purl](https://github.com/tompurl)
