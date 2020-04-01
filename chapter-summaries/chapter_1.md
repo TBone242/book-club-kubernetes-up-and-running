@@ -34,3 +34,15 @@
 - Kubernetes encourages loose coupling between system layers
   - e.g. hardware, OS, cluster/K8s, application
 - Makes it easier for teams to specialize in one layer
+
+## Q & A
+- How can I change my mindeset from VMWare-centric to container-centric?
+- How do we convert an existing app to a Kubernetes-hosted app?
+- What are some good ideas for a small kubernetes project?
+  - Selenium grid?
+  - PHP/web app?
+  - "Bare metal" cluster :-) 
+  - Work as a team on different components?
+  - It's OK if you don't want to actively work on a shared project 😼
+- Does kubernetes make it easier to upgrade code?
+- Walter will run chapter 2!
