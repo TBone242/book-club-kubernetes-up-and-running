@@ -9,10 +9,16 @@
 - Abstracting your infrastructure
 - Efficiency
 ## Velocity
-- How much can we ship while maintaining a highly maintainable service?
+- How frequently can we ship while maintaining a highly maintainable service?
+  - Big data 3 v's - velocity, volume, veracity
 ### Core Concepts
 1. Immutability
-2. Declarative configuration
+   - Data perspective - Data doesn't change, store it as you get it
+   - Docker / LXE 
+2. Declarative  configuration
+   - YAML / JSON config, not code 
+   - Idempotent
+   - Easily specify/enforce the number of services
 3. Online self-healing systems
 ## Scaling
 ### Decoupling
@@ -20,6 +26,7 @@
 ### Easy System Scaling
 - Immutable, declarative services are easier to scale
 - Kubernetes is also good at managing resources efficently across a cluster
+  - Not necessarily expensive
 ### Scaling Development Teams
 - Kubernetes "primitives" work well with small teams
   - e.g pods, ingresses, services, etc.
