@@ -26,12 +26,12 @@ create an SSH tunnel between your machine and the server:
     
 Let's explain the components here:
 
-    - **9080 (on the left side)** - This is the port that you will access on **your** machine.
-    - **9080 (on the right side)** - This is the port that you want to access on the **remote server**
+- **9080 (on the left side)** - This is the port that you will access on **your** machine.
+- **9080 (on the right side)** - This is the port that you want to access on the **remote server**
 
 If you're on Windows then check out the following tutorial:
 
-    - <https://docs.bitnami.com/bch/faq/get-started/access-ssh-tunnel/>
+- <https://docs.bitnami.com/bch/faq/get-started/access-ssh-tunnel/>
     
 Once you execute the command you'll see something like this in your terminal
 (e.g. Putty):
