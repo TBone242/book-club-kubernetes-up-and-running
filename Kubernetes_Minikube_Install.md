@@ -1,7 +1,7 @@
 Options for running Kubernetes locally
 https://developer.ibm.com/technologies/containers/blogs/options-to-run-kubernetes-locally/
 
-Install Docker
+**Install Docker**
 
 Installed using Package Manager
 
@@ -9,7 +9,7 @@ Add the Docker User Group
 sudo usermod -aG docker $USER && newgrp docker
 
 
-Install kubectl
+**Install kubectl**
 Kubectl is Kubernetes command line tools allowing you to run commands against Kubernetes. 
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
@@ -25,7 +25,7 @@ Test: kubectl version --client
 
 
 
-Install minikube
+**Install minikube**
 Minikube is a tool that runs a single-node Kubernetes cluster in a virtual machine on your personal computer.
 
 Command
@@ -35,7 +35,7 @@ sudo mkdir -p /usr/local/bin/
 
 sudo install minikube /usr/local/bin/
 
-Start using Docker
+**Start using Docker**
 This needs to happen on the actual computer
 
 Command
@@ -49,7 +49,7 @@ minikube start
 
 — will download the ISO for Minikube and run. 
 
-Install Web UI
+**Install Web UI**
 https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 
 Command
@@ -77,10 +77,10 @@ kubectl describe secret dashboard-admin-sa-token-xxxx
 Copy the token and paste in the Kubernetes Web UI
 
 
-Using MicroK8s
+**Using MicroK8s**
 https://kubernetes.io/blog/2019/11/26/running-kubernetes-locally-on-linux-with-microk8s/
 
 
-Deploy Web UI
+**Deploy Web UI**
 https://www.techrepublic.com/article/how-to-deploy-the-kubernetes-webui-with-microk8s/
 
