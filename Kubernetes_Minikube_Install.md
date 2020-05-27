@@ -7,6 +7,7 @@ https://developer.ibm.com/technologies/containers/blogs/options-to-run-kubernete
 Installed using Package Manager
 
 Add the Docker User Group
+
 sudo usermod -aG docker $USER && newgrp docker
 
 
@@ -17,6 +18,7 @@ Kubectl is Kubernetes command line tools allowing you to run commands against Ku
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
 
 Command
+
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
 chmod +x ./kubectl
@@ -38,37 +40,46 @@ sudo mkdir -p /usr/local/bin/
 
 sudo install minikube /usr/local/bin/
 
+
 **Start using Docker**
 
 This needs to happen on the actual computer
 
 Command
+
 minikube start --driver=docker
 
 Start using KVM or VirualBox
+
 First install KVM or VirtualBox
 
 Command
+
 minikube start
 
 — will download the ISO for Minikube and run. 
+
 
 **Install Web UI**
 
 https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 
 Command
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 
 kubectl proxy
 
 Access:
+
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
 Create a token for Web UI
+
 https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the-kubernetes-dashboard
 
 Command
+
 kubectl create serviceaccount dashboard-admin-sa
 
 kubectl create clusterrolebinding dashboard-admin-sa --clusterrole=cluster-admin --serviceaccount=default:dashboard-admin-sa
@@ -82,9 +93,11 @@ kubectl describe secret dashboard-admin-sa-token-xxxx
 Copy the token and paste in the Kubernetes Web UI
 
 
+
 **Using MicroK8s**
 
 https://kubernetes.io/blog/2019/11/26/running-kubernetes-locally-on-linux-with-microk8s/
+
 
 
 **Deploy Web UI**
