@@ -8,7 +8,7 @@ Installed using Package Manager
 
 Add the Docker User Group
 
-sudo usermod -aG docker $USER && newgrp docker
+> sudo usermod -aG docker $USER && newgrp docker
 
 
 ## Install kubectl
