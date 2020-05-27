@@ -1,8 +1,8 @@
-Options for running Kubernetes locally
+#Options for running Kubernetes locally
 
 https://developer.ibm.com/technologies/containers/blogs/options-to-run-kubernetes-locally/
 
-**Install Docker**
+##Install Docker
 
 Installed using Package Manager
 
@@ -11,13 +11,13 @@ Add the Docker User Group
 sudo usermod -aG docker $USER && newgrp docker
 
 
-**Install kubectl**
+##Install kubectl
 
 Kubectl is Kubernetes command line tools allowing you to run commands against Kubernetes. 
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
 
-Command
+**Command**
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
@@ -29,7 +29,7 @@ Test: kubectl version --client
 
 
 
-**Install minikube**
+##Install minikube
 
 Minikube is a tool that runs a single-node Kubernetes cluster in a virtual machine on your personal computer.
 
@@ -41,11 +41,11 @@ sudo mkdir -p /usr/local/bin/
 sudo install minikube /usr/local/bin/
 
 
-**Start using Docker**
+##Start using Docker
 
 This needs to happen on the actual computer
 
-Command
+**Command**
 
 minikube start --driver=docker
 
@@ -60,11 +60,11 @@ minikube start
 — will download the ISO for Minikube and run. 
 
 
-**Install Web UI**
+##Install Web UI
 
 https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 
-Command
+**Command**
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 
@@ -74,11 +74,11 @@ Access:
 
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
-Create a token for Web UI
+##Create a token for Web UI
 
 https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the-kubernetes-dashboard
 
-Command
+**Command**
 
 kubectl create serviceaccount dashboard-admin-sa
 
@@ -94,13 +94,13 @@ Copy the token and paste in the Kubernetes Web UI
 
 
 
-**Using MicroK8s**
+##Using MicroK8s
 
 https://kubernetes.io/blog/2019/11/26/running-kubernetes-locally-on-linux-with-microk8s/
 
 
 
-**Deploy Web UI**
+##Deploy Web UI
 
 https://www.techrepublic.com/article/how-to-deploy-the-kubernetes-webui-with-microk8s/
 
