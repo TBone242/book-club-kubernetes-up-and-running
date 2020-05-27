@@ -19,11 +19,11 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
 
 **Command**
 
-curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+> curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 
-chmod +x ./kubectl
+> chmod +x ./kubectl
 
-sudo mv ./kubectl /usr/local/bin/kubectl
+> sudo mv ./kubectl /usr/local/bin/kubectl
 
 Test: kubectl version --client
 
@@ -34,11 +34,11 @@ Test: kubectl version --client
 Minikube is a tool that runs a single-node Kubernetes cluster in a virtual machine on your personal computer.
 
 Command
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
+> curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
 
-sudo mkdir -p /usr/local/bin/
+> sudo mkdir -p /usr/local/bin/
 
-sudo install minikube /usr/local/bin/
+> sudo install minikube /usr/local/bin/
 
 
 ## Start using Docker
@@ -47,15 +47,15 @@ This needs to happen on the actual computer
 
 **Command**
 
-minikube start --driver=docker
+> minikube start --driver=docker
 
-Start using KVM or VirualBox
+## Start using KVM or VirualBox
 
 First install KVM or VirtualBox
 
-Command
+**Command**
 
-minikube start
+> minikube start
 
 — will download the ISO for Minikube and run. 
 
@@ -66,9 +66,9 @@ https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 
 **Command**
 
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+> kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 
-kubectl proxy
+> kubectl proxy
 
 Access:
 
@@ -80,15 +80,15 @@ https://www.replex.io/blog/how-to-install-access-and-add-heapster-metrics-to-the
 
 **Command**
 
-kubectl create serviceaccount dashboard-admin-sa
+> kubectl create serviceaccount dashboard-admin-sa
 
-kubectl create clusterrolebinding dashboard-admin-sa --clusterrole=cluster-admin --serviceaccount=default:dashboard-admin-sa
+> kubectl create clusterrolebinding dashboard-admin-sa --clusterrole=cluster-admin --serviceaccount=default:dashboard-admin-sa
 
-kubectl get secrets
+> kubectl get secrets
 
-Replace the 'xxxx' with what you find when you run the get secrets command. 
+*Replace the 'xxxx' with what you find when you run the get secrets command.* 
 
-kubectl describe secret dashboard-admin-sa-token-xxxx
+> kubectl describe secret dashboard-admin-sa-token-xxxx
 
 Copy the token and paste in the Kubernetes Web UI
 
