@@ -10,6 +10,7 @@ sudo usermod -aG docker $USER && newgrp docker
 
 
 **Install kubectl**
+
 Kubectl is Kubernetes command line tools allowing you to run commands against Kubernetes. 
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
@@ -26,6 +27,7 @@ Test: kubectl version --client
 
 
 **Install minikube**
+
 Minikube is a tool that runs a single-node Kubernetes cluster in a virtual machine on your personal computer.
 
 Command
